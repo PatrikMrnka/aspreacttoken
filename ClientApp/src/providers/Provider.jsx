@@ -7,7 +7,6 @@ let storedData = JSON.parse(sessionStorage.getItem(LOCAL_STORAGE_KEY))
 
 export const LOGIN = "LOGIN"
 export const LOGOUT = "LOGOUT"
-export const SET_ACCESS_TOKEN = "SET_ACCESS_TOKEN"
 
 const initialState = {
     accessToken: ""
@@ -19,12 +18,11 @@ const reducer = (state, action) => {
             axios.post("https://localhost:44414/api/Auth/login?username=" + action.payload.username + "&password=" + action.payload.password,
             {
                 header: {
-                    //Authorization: "Bearer " + state.accessToken,
                     "Content-Type": "application/json"
                 }
             }).then(response => {
-                console.log(response);
-            return {...state, accessToken: response.data.accessToken}
+                console.log(response.data.value);
+            return {accessToken: response.data.value}
             });
         }
         default: {

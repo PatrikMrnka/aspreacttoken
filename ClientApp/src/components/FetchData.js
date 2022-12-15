@@ -55,14 +55,14 @@ export class FetchData extends Component {
   }
 
   async populateWeatherData() {
-    const [state, dispatch] = this.context;
+    const [state] = this.context;
+    console.log(state);
     // const response = await fetch('weatherforecast');
     // const data = await response.json();
-    console.log(state);
     axios.get("https://localhost:44414/WeatherForecast",
     {
         header: {
-            Authorization: "Bearer 2" + state.accessToken,
+            Authorization: "Bearer " + state,
             "Content-Type": "application/json"
         }
     }).then(response => {

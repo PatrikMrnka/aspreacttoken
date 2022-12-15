@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { ApplicationContext } from '../providers/Provider';
 import './NavMenu.css';
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
+  static contextType = ApplicationContext;
 
   constructor (props) {
     super(props);
@@ -22,6 +24,7 @@ export class NavMenu extends Component {
   }
 
   render() {
+    const [state, dispatch] = this.context;
     return (
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" container light>
@@ -40,9 +43,6 @@ export class NavMenu extends Component {
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} className="text-dark" to="/login">Login</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} className="text-dark" to="/logout">Logout</NavLink>
               </NavItem>
             </ul>
           </Collapse>
