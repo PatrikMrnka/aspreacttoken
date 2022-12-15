@@ -15,7 +15,7 @@ namespace aspnetapireactoauth.Controllers
             this._as = auths;
         }
 
-        [HttpGet("login")]
+        [HttpPost("login")]
         public IActionResult Authenticate(string username, string password)
         {
             var token = _as.Authentication(new Models.User

@@ -1,7 +1,10 @@
+import axios from 'axios';
 import React, { Component } from 'react';
+import { ApplicationContext } from '../providers/Provider';
 
 export class FetchData extends Component {
   static displayName = FetchData.name;
+  static contextType = ApplicationContext;
 
   constructor(props) {
     super(props);
@@ -52,8 +55,19 @@ export class FetchData extends Component {
   }
 
   async populateWeatherData() {
-    const response = await fetch('weatherforecast');
-    const data = await response.json();
-    this.setState({ forecasts: data, loading: false });
+    const [state, dispatch] = this.context;
+    // const response = await fetch('weatherforecast');
+    // const data = await response.json();
+    console.log(state);
+    axios.get("https://localhost:44414/WeatherForecast",
+    {
+        header: {
+            Authorization: "Bearer 2" + state.accessToken,
+            "Content-Type": "application/json"
+        }
+    }).then(response => {
+      this.setState({ forecasts: response.data, loading: false });
+    });
+
   }
 }
