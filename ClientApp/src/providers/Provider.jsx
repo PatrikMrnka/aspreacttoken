@@ -1,29 +1,40 @@
 import axios from "axios"
 import { useEffect } from "react"
-import { createContext, useReducer, useContext } from "react"
+import { createContext, useReducer, useContext, useState } from "react"
 
 const LOCAL_STORAGE_KEY = "tokens"
 let storedData = JSON.parse(sessionStorage.getItem(LOCAL_STORAGE_KEY))
+sessionStorage.clear()
 
 export const LOGIN = "LOGIN"
 export const LOGOUT = "LOGOUT"
+export const SET_ACCESS_TOKEN = "SET_ACCESS_TOKEN"
 
 const initialState = {
     accessToken: ""
 }
 
+
 const reducer = (state, action) => {
     switch (action.type) {
-        case LOGIN: {
-            axios.post("https://localhost:44414/api/Auth/login?username=" + action.payload.username + "&password=" + action.payload.password,
-            {
-                header: {
-                    "Content-Type": "application/json"
-                }
-            }).then(response => {
-                console.log(response.data.value);
-            return {accessToken: response.data.value}
-            });
+        // case LOGIN: {
+        //     let token = "";
+        //     axios.post("https://localhost:44414/api/Auth/login?username=" + action.payload.username + "&password=" + action.payload.password,
+        //     {
+        //         header: {
+        //             "Content-Type": "application/json"
+        //         }
+        //     }).then(response => {
+        //         console.log(response.data.value);
+        //         token = response.data.value;
+        //     }).catch(error => {
+        //         console.log(error);
+        //     });
+        //     return {accessToken: token}
+        // }
+        case SET_ACCESS_TOKEN: {
+            console.log(action.payload.accessToken);
+            return {accessToken: action.payload.accessToken}
         }
         default: {
             return state;

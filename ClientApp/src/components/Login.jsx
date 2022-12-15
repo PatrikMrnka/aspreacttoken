@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useAppContext, LOGIN } from "../providers/Provider";
 
@@ -5,7 +6,14 @@ const Login = () => {
     const [store, dispatch] = useAppContext();
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-        dispatch({ type: LOGIN, payload: data })
+        axios.post("https://localhost:44414/api/Auth/login?username=" + data.username + "&password=" + data.password,
+            {
+                header: {
+                    "Content-Type": "application/json"
+                }
+            }).then(response => {
+                dispatch({ type: "SET_ACCESS_TOKEN", payload: { accessToken: response.data.value } })
+            });
     }
     return (
         <>

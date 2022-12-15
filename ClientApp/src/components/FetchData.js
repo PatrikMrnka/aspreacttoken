@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import { ApplicationContext } from '../providers/Provider';
+import {ApplicationContext} from '../providers/Provider';
 
 export class FetchData extends Component {
   static displayName = FetchData.name;
@@ -55,19 +55,18 @@ export class FetchData extends Component {
   }
 
   async populateWeatherData() {
-    const [state] = this.context;
-    console.log(state);
+    let [state, ] = this.context;
+    console.log(state.accessToken);
     // const response = await fetch('weatherforecast');
     // const data = await response.json();
     axios.get("https://localhost:44414/WeatherForecast",
     {
         header: {
-            Authorization: "Bearer " + state,
+            Authorization: `Bearer ${state.accessToken}`,
             "Content-Type": "application/json"
         }
     }).then(response => {
       this.setState({ forecasts: response.data, loading: false });
     });
-
   }
 }
