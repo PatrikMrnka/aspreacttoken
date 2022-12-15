@@ -44,6 +44,9 @@ export class NavMenu extends Component {
               <NavItem>
                 <NavLink tag={Link} className="text-dark" to="/login">Login</NavLink>
               </NavItem>
+              <NavItem>
+                <button onClick={() => dispatch({ type: 'LOGOUT' })}>Logout</button>
+              </NavItem>
             </ul>
           </Collapse>
         </Navbar>

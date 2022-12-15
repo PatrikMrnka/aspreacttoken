@@ -2105,3 +2105,173 @@ ClaimsAuthorizationRequirement:Claim.Type=isAdmin
 ClaimsAuthorizationRequirement:Claim.Type=isAdmin
 2022-12-15 15:14:34.066 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
 2022-12-15 15:14:34.068 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 72.4541ms
+2022-12-15 17:58:04.008 +01:00 [INF] User profile is available. Using 'C:\Users\patri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-15 17:58:04.248 +01:00 [INF] Now listening on: https://localhost:7044
+2022-12-15 17:58:04.249 +01:00 [INF] Now listening on: http://localhost:5044
+2022-12-15 17:58:04.252 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-15 17:58:04.253 +01:00 [INF] Hosting environment: Development
+2022-12-15 17:58:04.253 +01:00 [INF] Content root path: C:\Users\patri\Downloads\ds\
+2022-12-15 17:58:05.089 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 17:58:09.264 +01:00 [INF] No SPA development server running at https://localhost:44414 found.
+2022-12-15 17:58:09.368 +01:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2022-12-15 17:58:09.380 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 200 - text/html 4294.5405ms
+2022-12-15 17:58:12.452 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 17:58:15.770 +01:00 [INF] SPA proxy is ready. Redirecting to https://localhost:44414.
+2022-12-15 17:58:15.771 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 302 0 - 3318.9359ms
+2022-12-15 17:58:16.509 +01:00 [INF] SPA development server running at 'https://localhost:44414'
+2022-12-15 18:00:18.536 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin application/json 46
+2022-12-15 18:00:18.674 +01:00 [INF] Executing endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:00:18.704 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(System.String, System.String) on controller aspnetapireactoauth.Controllers.AuthController (aspnetapireactoauth).
+2022-12-15 18:00:18.973 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Authentication.AuthenticationToken'.
+2022-12-15 18:00:19.057 +01:00 [INF] Executed action aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth) in 347.5592ms
+2022-12-15 18:00:19.062 +01:00 [INF] Executed endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:00:19.064 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin application/json 46 - 200 - application/json;+charset=utf-8 528.4081ms
+2022-12-15 18:00:20.597 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:00:20.622 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:00:20.630 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:00:20.631 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 33.2177ms
+2022-12-15 18:01:09.788 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:01:09.791 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:01:09.792 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:01:09.793 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 5.0868ms
+2022-12-15 18:01:27.249 +01:00 [INF] User profile is available. Using 'C:\Users\patri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-15 18:01:27.491 +01:00 [INF] Now listening on: https://localhost:7044
+2022-12-15 18:01:27.492 +01:00 [INF] Now listening on: http://localhost:5044
+2022-12-15 18:01:27.495 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-15 18:01:27.496 +01:00 [INF] Hosting environment: Development
+2022-12-15 18:01:27.497 +01:00 [INF] Content root path: C:\Users\patri\Downloads\ds\
+2022-12-15 18:01:27.707 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:01:31.877 +01:00 [INF] No SPA development server running at https://localhost:44414 found.
+2022-12-15 18:01:32.032 +01:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2022-12-15 18:01:32.042 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 200 - text/html 4337.3157ms
+2022-12-15 18:01:35.103 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:01:37.679 +01:00 [INF] SPA proxy is ready. Redirecting to https://localhost:44414.
+2022-12-15 18:01:37.680 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 302 0 - 2577.1151ms
+2022-12-15 18:01:37.680 +01:00 [INF] SPA development server running at 'https://localhost:44414'
+2022-12-15 18:01:43.474 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/swagger/index.html - -
+2022-12-15 18:01:43.788 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/swagger/index.html - - - 200 - text/html;charset=utf-8 313.4723ms
+2022-12-15 18:01:44.000 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/swagger/V1/swagger.json - -
+2022-12-15 18:01:44.101 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/swagger/V1/swagger.json - - - 200 - application/json;charset=utf-8 101.0415ms
+2022-12-15 18:01:59.581 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin - 0
+2022-12-15 18:01:59.773 +01:00 [INF] Executing endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:01:59.798 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(System.String, System.String) on controller aspnetapireactoauth.Controllers.AuthController (aspnetapireactoauth).
+2022-12-15 18:01:59.951 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Authentication.AuthenticationToken'.
+2022-12-15 18:01:59.966 +01:00 [INF] Executed action aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth) in 161.1817ms
+2022-12-15 18:01:59.971 +01:00 [INF] Executed endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:01:59.973 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin - 0 - 200 - application/json;+charset=utf-8 391.9636ms
+2022-12-15 18:02:25.183 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:02:25.235 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:02:25.243 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:02:25.244 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 61.0962ms
+2022-12-15 18:03:59.279 +01:00 [INF] User profile is available. Using 'C:\Users\patri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-15 18:03:59.654 +01:00 [INF] Now listening on: https://localhost:7044
+2022-12-15 18:03:59.656 +01:00 [INF] Now listening on: http://localhost:5044
+2022-12-15 18:03:59.661 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-15 18:03:59.662 +01:00 [INF] Hosting environment: Development
+2022-12-15 18:03:59.663 +01:00 [INF] Content root path: C:\Users\patri\Downloads\ds\
+2022-12-15 18:04:00.040 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:04:04.217 +01:00 [INF] No SPA development server running at https://localhost:44414 found.
+2022-12-15 18:04:04.306 +01:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2022-12-15 18:04:04.317 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 200 - text/html 4280.9708ms
+2022-12-15 18:04:07.386 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:05:18.701 +01:00 [INF] User profile is available. Using 'C:\Users\patri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-15 18:05:18.912 +01:00 [INF] Now listening on: https://localhost:7044
+2022-12-15 18:05:18.913 +01:00 [INF] Now listening on: http://localhost:5044
+2022-12-15 18:05:18.916 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-15 18:05:18.917 +01:00 [INF] Hosting environment: Development
+2022-12-15 18:05:18.917 +01:00 [INF] Content root path: C:\Users\patri\Downloads\ds\
+2022-12-15 18:05:19.344 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:05:23.593 +01:00 [INF] No SPA development server running at https://localhost:44414 found.
+2022-12-15 18:05:23.671 +01:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2022-12-15 18:05:23.683 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 200 - text/html 4341.8047ms
+2022-12-15 18:05:26.727 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:05:28.506 +01:00 [INF] SPA development server running at 'https://localhost:44414'
+2022-12-15 18:05:28.778 +01:00 [INF] SPA proxy is ready. Redirecting to https://localhost:44414.
+2022-12-15 18:05:28.779 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 302 0 - 2051.9527ms
+2022-12-15 18:05:45.323 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin application/json 46
+2022-12-15 18:05:45.433 +01:00 [INF] Executing endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:05:45.456 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(System.String, System.String) on controller aspnetapireactoauth.Controllers.AuthController (aspnetapireactoauth).
+2022-12-15 18:05:45.709 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Authentication.AuthenticationToken'.
+2022-12-15 18:05:45.791 +01:00 [INF] Executed action aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth) in 330.1583ms
+2022-12-15 18:05:45.795 +01:00 [INF] Executed endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:05:45.798 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin application/json 46 - 200 - application/json;+charset=utf-8 475.3082ms
+2022-12-15 18:05:47.357 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:05:47.381 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:05:47.389 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:05:47.390 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 33.0960ms
+2022-12-15 18:10:19.125 +01:00 [INF] User profile is available. Using 'C:\Users\patri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-15 18:10:19.439 +01:00 [INF] Now listening on: https://localhost:7044
+2022-12-15 18:10:19.440 +01:00 [INF] Now listening on: http://localhost:5044
+2022-12-15 18:10:19.444 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-15 18:10:19.445 +01:00 [INF] Hosting environment: Development
+2022-12-15 18:10:19.445 +01:00 [INF] Content root path: C:\Users\patri\Downloads\ds\
+2022-12-15 18:10:19.792 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:10:23.949 +01:00 [INF] No SPA development server running at https://localhost:44414 found.
+2022-12-15 18:10:24.036 +01:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2022-12-15 18:10:24.047 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 200 - text/html 4257.9961ms
+2022-12-15 18:10:27.095 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:10:28.969 +01:00 [INF] SPA development server running at 'https://localhost:44414'
+2022-12-15 18:10:29.131 +01:00 [INF] SPA proxy is ready. Redirecting to https://localhost:44414.
+2022-12-15 18:10:29.132 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 302 0 - 2036.7367ms
+2022-12-15 18:10:39.354 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=Admin&password=Admin application/json 46
+2022-12-15 18:10:39.467 +01:00 [INF] Executing endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:10:39.492 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(System.String, System.String) on controller aspnetapireactoauth.Controllers.AuthController (aspnetapireactoauth).
+2022-12-15 18:10:39.653 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Authentication.AuthenticationToken'.
+2022-12-15 18:10:39.748 +01:00 [INF] Executed action aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth) in 249.5499ms
+2022-12-15 18:10:39.752 +01:00 [INF] Executed endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:10:39.754 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=Admin&password=Admin application/json 46 - 200 - application/json;+charset=utf-8 399.8151ms
+2022-12-15 18:10:44.824 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:10:44.847 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:10:44.855 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:10:44.856 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 32.1278ms
+2022-12-15 18:11:37.003 +01:00 [INF] User profile is available. Using 'C:\Users\patri\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-15 18:11:37.280 +01:00 [INF] Now listening on: https://localhost:7044
+2022-12-15 18:11:37.281 +01:00 [INF] Now listening on: http://localhost:5044
+2022-12-15 18:11:37.286 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-15 18:11:37.287 +01:00 [INF] Hosting environment: Development
+2022-12-15 18:11:37.288 +01:00 [INF] Content root path: C:\Users\patri\Downloads\ds\
+2022-12-15 18:11:37.636 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:11:41.785 +01:00 [INF] No SPA development server running at https://localhost:44414 found.
+2022-12-15 18:11:41.864 +01:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2022-12-15 18:11:41.875 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 200 - text/html 4242.6389ms
+2022-12-15 18:11:44.925 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7044/ - -
+2022-12-15 18:11:47.087 +01:00 [INF] SPA proxy is ready. Redirecting to https://localhost:44414.
+2022-12-15 18:11:47.088 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7044/ - - - 302 0 - 2163.2541ms
+2022-12-15 18:11:47.088 +01:00 [INF] SPA development server running at 'https://localhost:44414'
+2022-12-15 18:12:05.245 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin application/json 46
+2022-12-15 18:12:05.371 +01:00 [INF] Executing endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:12:05.395 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(System.String, System.String) on controller aspnetapireactoauth.Controllers.AuthController (aspnetapireactoauth).
+2022-12-15 18:12:05.704 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Authentication.AuthenticationToken'.
+2022-12-15 18:12:05.801 +01:00 [INF] Executed action aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth) in 399.3138ms
+2022-12-15 18:12:05.806 +01:00 [INF] Executed endpoint 'aspnetapireactoauth.Controllers.AuthController.Authenticate (aspnetapireactoauth)'
+2022-12-15 18:12:05.809 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44414/api/Auth/login?username=isAdmin&password=isAdmin application/json 46 - 200 - application/json;+charset=utf-8 563.6241ms
+2022-12-15 18:12:06.855 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:12:06.884 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:12:06.897 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:12:06.899 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 43.1381ms
+2022-12-15 18:13:48.013 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:13:48.016 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:13:48.016 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:13:48.017 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 3.9557ms
+2022-12-15 18:13:48.030 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:13:48.032 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:13:48.033 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:13:48.033 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 3.1218ms
+2022-12-15 18:13:48.044 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:13:48.044 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:13:48.046 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:13:48.046 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 2.8403ms
+2022-12-15 18:13:48.054 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44414/WeatherForecast - -
+2022-12-15 18:13:48.055 +01:00 [INF] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=isAdmin
+2022-12-15 18:13:48.056 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-12-15 18:13:48.057 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44414/WeatherForecast - - - 401 0 - 2.5034ms

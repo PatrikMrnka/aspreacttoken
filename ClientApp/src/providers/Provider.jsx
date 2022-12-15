@@ -32,6 +32,10 @@ const reducer = (state, action) => {
         //     });
         //     return {accessToken: token}
         // }
+        case LOGOUT: {
+            sessionStorage.clear();
+            return {accessToken: ""}
+        }
         case SET_ACCESS_TOKEN: {
             console.log(action.payload.accessToken);
             return {accessToken: action.payload.accessToken}
